@@ -1,0 +1,13 @@
+---
+abstract: |
+  *Finally the results are critically reported, explained and discussed. 
+  A future work subsection is typically presented.*
+---
+
+# Results and future work {#sec-results}
+
+## Discussion of the results
+{{<lipsum 3>}}
+
+## Future work
+{{<lipsum 2>}}

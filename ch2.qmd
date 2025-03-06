@@ -1,0 +1,14 @@
+---
+abstract: |
+  *This section must recall the theoretical ground for the rest of the thesis.*
+---
+
+# Methodology and theoretical basis {#sec-methodology}
+
+## Relevant theory
+{{<lipsum 3>}}
+
+
+## Development and proposed models
+{{<lipsum 3>}}
+

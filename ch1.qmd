@@ -1,0 +1,89 @@
+---
+abstract: |
+  *This is the abstract. All chapters, excluding Preface, Introduction, and 
+  Conclusions, shall have an abstract, summarizing the Chapter contents. 
+  Abstract uses valid Markdown, but it shall be a single paragraph, without any 
+  link or reference. The whole abstract must be in Italic.*
+---
+
+```{r setup}
+#| include: false
+library(ggplot2)
+```
+
+# Problem Definition {#sec-problem-definition}
+
+## Subject Matter
+
+### Equations
+
+Equations can be written in LaTeX format. For example, the equation of a line is $y = mx + b$. The equation of a circle is $x^2 + y^2 = r^2$. Those are **inline equations**. Longer equations, that can be optionally numbered, are given as: 
+
+$$
+\begin{aligned}
+y &= \beta_0 + \beta_1 x + \epsilon \\
+\epsilon &\sim N(0, \sigma^2)
+\end{aligned}
+$${#eq-linear-model}
+
+Equations can be referenced as in @eq-linear-model.
+
+
+### Figures {#sec-figures}
+
+::: column-margin
+This is a side note. Use the `column-margin` class to create side notes. See also the [Quarto documentation](https://quarto.org/docs/authoring/figures.html).
+:::
+
+{{< lipsum 2 >}}
+
+**Figures can be also created on the side margin, by using the `column: margin` chunk option in the R chunk. See the result in @fig-mtcars.**
+
+```{r}
+#| label: fig-mtcars
+#| echo: false
+#| column: margin
+#| fig-cap: MPG vs horsepower, colored by transmission.
+mtcars2 <- mtcars
+mtcars2$am <- factor(
+  mtcars$am, labels = c('automatic', 'manual')
+)
+ggplot(mtcars2, aes(hp, mpg, color = am)) +
+  geom_point() +
+  geom_smooth(formula = y ~ x, method = "loess") +
+  theme(legend.position = 'bottom')
+```
+
+{{< lipsum 3 >}}
+
+Images are probably better added as figures, as in @fig-placeholder. When needed, photographs can be set to take the full page width, as in @fig-placeholder2.
+
+![A placeholder image]({{<placeholder 600 300>}}){#fig-placeholder}
+
+::: column-page
+![A full width placeholder image]({{<placeholder 1200 300>}}){#fig-placeholder2}
+:::
+
+### Tables
+
+Tables can be created using the `kable` function from the `knitr` package. See an example in @tbl-iris. Use the `column-page` class to make the table take the full page width (for wider tables).
+
+See also [Quarto documentation](https://quarto.org/docs/authoring/tables.html).
+
+```{r}
+#| label: tbl-iris
+#| echo: false
+#| tab-cap: The first rows of the iris dataset.
+
+knitr::kable(head(iris), caption = "The first rows of the iris dataset.")
+```
+
+{{< lipsum 3 >}}
+
+## State of the Art
+
+{{< lipsum 10 >}}
+
+## Research Questions
+
+{{< lipsum 3 >}}

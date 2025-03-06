@@ -1,0 +1,19 @@
+---
+abstract: |
+  *This section describes any experimental activity, possibly including 
+  validation.*
+---
+
+# Experiments and validation {#sec-experiments}
+
+## Design and development
+
+{{<lipsum 3>}}
+
+
+## Experiments
+{{<lipsum 3>}}
+
+
+## Validation
+{{<lipsum 3>}}

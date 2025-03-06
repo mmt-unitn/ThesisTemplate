@@ -1,0 +1,5 @@
+# Conclusions
+
+This section must summarize the main findings of the thesis. It should also include a discussion on the implications of the results and suggest future work.
+
+When read together, Introduction and Conclusions must provide a complete overview of the thesis.

@@ -1,0 +1,43 @@
+project:
+  type: book
+
+book:
+  title: "Thesis Template"
+  author: "Paolo Bosetti"
+  date: today
+  chapters:
+    - index.qmd # and index.qmd file is mandatory
+    - intro.qmd
+    - ch1.qmd
+    - ch2.qmd
+    - ch3.qmd
+    - ch4.qmd
+    - conclusions.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    # See https://pandoc.org/MANUAL.html#variables-for-latex for valid options
+    documentclass: scrbook
+    fontfamily: libertinus
+    # fontfamily: palatino
+    pagestyle: headings
+    pagesize: A4
+    fig-pos: "t"
+    tab-pos: "b"
+    linestretch: 1.5 # set to 1.0 for final version
+    fontsize: 10pt # 10pt, 11pt, or 12pt
+    urlstyle: tt
+    linkcolor: blue
+    lot: true # list of tables
+    lof: true # list of figures
+    # lang: it-IT # uncomment for Italian
+
+
+

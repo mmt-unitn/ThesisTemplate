@@ -1,0 +1,11 @@
+# Preface {.unnumbered}
+
+This is the template for a thesis to be written using Quarto and R Markdown. 
+
+The template is divided in a possible and plausible set of chapters. Some chapters present examples on how to include figures, also in the margin, and how to include references.
+
+To learn more about Quarto books visit <https://quarto.org/docs/books>.
+
+This Preface section can be used for acknowledgements, dedications, or any other introductory text. 
+
+{{< lipsum 10 >}}

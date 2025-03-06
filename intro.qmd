@@ -1,0 +1,18 @@
+# Introduction
+
+This is a book created from markdown and executable code.
+
+The @sec-problem-definition provides some example for including figures, also in the margin.
+
+Look at the `_qurto.yml` file to customize the book. In particular, set line spacing to 1.5 for preliminary versions, then to 1.0 for the final version.
+
+During the development, it is typically faster and more convinient using the preview in HTML format (type `quarto serve` in the terminal). To preview the pdf version, use the terminal command `quarto preview --render pdf`.
+
+To see how references citation work, look at the source code and see it by real here @knuth84.
+
+In the final document, the Introduction shall:
+
+* outline the content of the manuscript, with references to the chapters, briefly explaining the context, the challenges, and the relevance for this work
+* do not comment on results (those go into the Conclusions)
+* be worth 2--5 pages
+* avoid figures, with the exception of a [graphical abstract](https://www.elsevier.com/researcher/author/tools-and-resources/graphical-abstract), if needed/applicable.
